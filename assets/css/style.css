@@ -1,0 +1,375 @@
+/* COMMUN RULES*/
+body {
+  font-family: "Trip Sans Med";
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  height: 60px;
+  justify-content: space-between ;
+}
+
+header img {
+  height: 40px;
+  width: 188px;
+  margin-top: 10px;
+}
+
+header button {
+  width: 150px;
+  height: 41px;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  font-family: 'Trip Sans Reg';
+  font-size: 16px;
+}
+
+.menu button:hover {
+  opacity: 0.7;
+}
+
+/* MENU */
+
+.menu {
+  display: flex;
+  height: 41px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.menu div {
+  display: flex;
+  width: 100px;
+  height: 35px;
+  border-radius: 13px;
+  margin-right: 15px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.menu i {
+  margin-right: 10px;;
+}
+
+.menu div:hover{
+  border: solid 2px rgb(0, 0, 0);
+}
+
+
+/* EXPLOREZ PARIS*/
+h1 {
+  font-size: 54px;
+  margin-top: 40px;
+}
+
+h1 span {
+  color: red;
+}
+
+/* MENU2 */
+.menu2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.menu2 div {
+  display: flex;
+  height: 68px;
+  flex: 1;
+  border: solid 1px black;
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.menu2 div:not(:last-child) {
+  margin-right: 16px;
+}
+
+.menu2 i {
+  margin-left: 10px;
+}
+
+/* PICTURES */
+.pictures {
+  display: flex;
+  height: 430px;
+  width: 1280px;
+  margin-top: 26px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.pic1 {
+  display: flex;
+}
+
+.pic1 img {
+  display: flex;
+  width: 800px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-right: 2px;
+  object-fit: cover;
+}
+
+.pic2 > div {
+  height: 430px;
+}
+
+
+.pic2 img {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  height: calc(50% - 1px);
+  margin-bottom: 2px;
+  object-fit: cover;
+}
+
+.pic2 img:not(:nth-child(2)) {
+  border-top-right-radius: 10px;
+}
+
+.pic2 img:not(:first-child) {
+  border-bottom-right-radius: 10px;
+}
+
+.pictures img:hover {
+  opacity: 0.7;
+}
+
+
+/* LIENS */
+.liens p {
+  text-align: right;
+  font-size: 12px;
+}
+
+/* SECTION 1 */
+.section1 {
+  display: flex;
+  height: 424px;
+  margin-top: 40px;
+  margin-bottom: 91px;
+}
+
+.section1 .col-1 {
+  width: 50%;
+}
+
+.section1 h1 {
+  display:flex;
+  font-size: 32px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.section1 p {
+  font-size: 20px;
+  font-family: Georgia;
+
+}
+
+.section1 .col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: calc(50% - 110px);
+  margin-left : 110px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+
+
+.section1 .col-2 div:first-child {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 237px;
+  background-color: #FB5D5D;
+  padding-left: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.section1 .col-2 h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.section1 .col-2 p {
+  font-size: 16px;
+}
+
+.section1 .col-2 button {
+  margin-top: 28px;
+  height: 55px;
+  width: 155px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+.section1 .col-2 div {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.section1 .col-2 img {
+  height: 187px;
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section1 button:hover {
+  background-color: #474747;
+}
+
+
+/*CONSEILS DE VOYAGE*/
+.titre {
+  display:flex;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.titre div {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 0.5px black;
+  height: 0;
+}
+
+.titre h2 {
+  margin: 0 20px;
+  font-size: 32px;
+  font-style: bold;
+}
+
+/* TOUT AFFICHER */
+.ta {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  color: inherit;
+  margin-bottom: 30px;
+}
+
+
+/* MENU3 */
+.menu3 {
+  display: flex;
+  flex: 1;
+  height: 80px;
+  margin-bottom: 60px;
+}
+
+.menu3 div {
+  display: flex;
+  border: solid 2px #E0E0E0;
+  border-radius: 10px;
+  flex : 1;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Trip Sans Reg';
+}
+
+.menu3 div:hover {
+  border:solid 2px black;
+}
+
+.menu3 div:not(:last-child) {
+  margin-right: 16px;
+}
+
+.menu3 img {
+  height: 85px;
+  width: 85px;
+  margin: 0 20px;
+}
+
+/* CAROUSSEL */
+
+.section2 .texts {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.section2 .texts h2 {
+  font-size: 32px;
+  margin-bottom: 28px;
+}
+
+.section2 .texts p {
+  font-size: 18px;
+  font-family: Georgia;
+  margin-bottom: 22px;
+  color: #474747
+}
+
+.section2 {
+  display: flex;
+  height: 300px;
+  margin-bottom: 80px;
+  margin-top: 10px;
+}
+
+.section2 .texts {
+  flex: 1;
+}
+
+.section2 .caroussel {
+  display: flex;
+  flex : 3;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.section2 .caroussel > div {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 17px);
+  height: 100%;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.section2 .caroussel div img {
+  height: 208px;
+  margin-bottom: 18px;
+  object-fit: cover;
+}
+
+.caroussel i {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 2px;
+}
+
+.caroussel p {
+  font-size: 14px;
+  font-family: "Trip Sans Regular";
+}
