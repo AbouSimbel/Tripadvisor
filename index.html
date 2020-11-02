@@ -4,25 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/85e5ac405b.js" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/fonts.css" />
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Document</title>
+  <title>Tourisme à Paris 2020 - Visitez Paris - TripAdvisor</title>
 </head>
 
 <body>
-  <div class="container">
+<!--FORMULAIRE D'INSCRIPTION-->
+<div class="modal hidden">
+  <div>
+    <i class="fas fa-times"></i>
+    <img src="./assets/img/bg/tripadvisor-lol-bnw.svg" alt="tripavisor-logo">
+    <span>Formulaire d'inscription</span>
+    <form id="signup-form">
+      <input
+        type="text"
+        name="firstname"
+        id="firstname"
+        value=""
+        placeholder="Prénom"/>
+      <input
+        type="text"
+        name="lastname"
+        id="lastname"
+        value=""
+        placeholder="Nom"/>
+      <input
+        type="email"
+        name="useremail"
+        id="email"
+        value=""
+        placeholder="Email"/>
+        <textarea
+        name="description"
+        id="description"
+        cols="30"
+        rows="10"
+        placeholder="Décrivez-vous en quelques lignes">Décrivez-vous en quelques lignes
+      </textarea>
+      <button type="submit">S'inscrire</button>
+    </form>
+  </div>
+</div>
+
 
 <!--HEADER-->
+  <div class="container">
     <header>
         <div><img src="./assets/img/bg/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt=""><input type="search"></div>
         <nav class="menu">
           <div><i class="fas fa-plus"></i>Publier</div>
           <div><i class="far fa-bell"></i>Alertes</div>
           <div><i class="far fa-heart"></i>Voyages</div>
-          <button>Connectez-vous</button>
+          <button id="connexion">Connectez-vous</button>
         </nav>
     </header>
+
+
+
 
 <!--EXPLOREZ PARIS-->
     <h1><span>Explorez</span> Paris</h1>
@@ -147,5 +188,10 @@
 
 
 </div>
+<!--
+<div class="modal">
+
+</div>
+-->
 </body>
 </html>
